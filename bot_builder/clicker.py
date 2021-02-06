@@ -11,12 +11,12 @@ class clicker:
 		self.move_time = move_time;
 		self.hover_time = hover_time;
 
-	def left_click(self, position, delay_time, event=True):
+	def left_click(self, position, event=True):
 		pyautogui.moveTo(position[0], position[1], duration=self.move_time);
 		time.sleep(self.hover_time);
 		pyautogui.click(position[0], position[1]);
 
-	def right_click(self, position, delay_time, event=True):
+	def right_click(self, position, event=True):
 		pyautogui.moveTo(position[0], position[1], duration=self.move_time);
 		time.sleep(self.hover_time);
 		pyautogui.rightClick(position[0], position[1]);

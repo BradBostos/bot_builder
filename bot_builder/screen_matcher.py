@@ -43,15 +43,15 @@ class screen_matcher:
 
 
 	def set_thresh(self, thresh):
-		self.thresh = thresh;
+		self.thresh = thresh
 		self.rematch();
 
 	def get_positions(self):
-		return (self.top_left, self.bottom_right);
+		return (self.top_left, self.bottom_right)
 
 	def show_matches(self):
 		img_loc = self.img;
 		for i in range(len(self.top_left)):
-			cv2.rectangle(img_loc, self.top_left[i], self.bottom_right[i], (0, 255, 255), 2);
-		cv2.imshow("Matches", img_loc);
-		cv2.waitKey(0);
+			cv2.rectangle(img_loc, self.top_left[i], self.bottom_right[i], (0, 255, 255), 2)
+		cv2.imshow("Matches", img_loc)
+		cv2.waitKey(0)
