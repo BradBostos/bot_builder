@@ -46,3 +46,13 @@ class delay:
 
     def frc(self, fixed_duration, random_duration, chance): # Easier Name
         self.fixed_random_chance(fixed_duration, random_duration, chance)
+
+    def countdown(self):
+        print("3")
+        time.sleep(1)
+        print("2")
+        time.sleep(1)
+        print("1")
+        time.sleep(1)
+        print("0...")
+        time.sleep(1)
